@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="https://d16ilfvy4mv02r.cloudfront.net/workspaces/NSLUd0rL6jL54oLjEzYbHIR31vE6P2Sy/046483de-3966-461c-9c91-1754ca53d88f/files/">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dulceria Coty – Party Store San Diego</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #f72585;
+      --secondary: #7209b7;
+      --dark: #3a0ca3;
+      --accent: #f9c74f;
+      --light: #fdf6ff;
+      --white: #ffffff;
+      --text: #1a1a2e;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--light); color: var(--text); overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2.5rem; position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    }
+    .nav-logo { font-family: 'Pacifico', cursive; color: var(--white); font-size: 1.6rem; text-shadow: 2px 2px 6px rgba(0,0,0,.3); }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.9); text-decoration: none; font-weight: 700; font-size: .95rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--dark) 100%);
+      text-align: center; padding: 6rem 2rem 5rem; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '🎉🎊🍬🎈🎀🍭🎁🎶';
+      position: absolute; font-size: 2.5rem; top: 10px; left: 0; right: 0;
+      opacity: .15; letter-spacing: 1.5rem; white-space: nowrap;
+    }
+    .hero h1 { font-family: 'Pacifico', cursive; font-size: clamp(2.5rem, 6vw, 4.5rem); color: var(--white); text-shadow: 3px 3px 12px rgba(0,0,0,.35); margin-bottom: .5rem; }
+    .hero .tagline { font-size: clamp(1rem, 2.5vw, 1.35rem); color: rgba(255,255,255,.9); font-weight: 600; margin-bottom: 2rem; }
+    .hero-badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .badge { background: rgba(255,255,255,.2); border: 2px solid rgba(255,255,255,.5); color: var(--white); border-radius: 50px; padding: .4rem 1.1rem; font-weight: 700; font-size: .9rem; backdrop-filter: blur(4px); }
+    .stars-row { margin-bottom: .3rem; }
+    .stars { color: var(--accent); font-size: 1.4rem; letter-spacing: 2px; }
+    .rating-text { color: var(--white); font-size: 1rem; font-weight: 700; }
+    .cta-btn {
+      display: inline-block; background: var(--accent); color: var(--dark);
+      font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.1rem;
+      padding: .85rem 2.5rem; border-radius: 50px; text-decoration: none; margin-top: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,.25); transition: transform .2s, box-shadow .2s;
+    }
+    .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.3); }
+
+    /* SECTIONS */
+    section { padding: 4.5rem 2rem; }
+    .section-title { text-align: center; font-family: 'Pacifico', cursive; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 2.5rem; color: var(--secondary); }
+    .section-title span { color: var(--primary); }
+
+    /* FEATURES */
+    .features { background: var(--white); }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.8rem; max-width: 1100px; margin: 0 auto; }
+    .feature-card {
+      background: linear-gradient(135deg, #fdf6ff, #fff0fb); border: 2px solid #f0d6ff;
+      border-radius: 20px; padding: 2rem 1.5rem; text-align: center;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(114,9,183,.12); }
+    .feature-icon { font-size: 2.8rem; margin-bottom: 1rem; }
+    .feature-card h3 { color: var(--secondary); font-size: 1.1rem; margin-bottom: .5rem; }
+    .feature-card p { color: #555; font-size: .92rem; line-height: 1.5; }
+
+    /* PRODUCTS */
+    .products { background: linear-gradient(135deg, #fff8f0, #fff0fb); }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .product-card {
+      background: var(--white); border-radius: 18px; padding: 2rem 1.5rem; text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08); transition: transform .25s, box-shadow .25s;
+      border-top: 4px solid var(--primary);
+    }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 14px 35px rgba(247,37,133,.15); }
+    .product-emoji { font-size: 3.2rem; margin-bottom: .8rem; display: block; }
+    .product-card h4 { font-weight: 800; color: var(--dark); margin-bottom: .5rem; font-size: 1.05rem; }
+    .product-card p { font-size: .88rem; color: #666; line-height: 1.5; }
+
+    /* REVIEWS */
+    .reviews { background: var(--white); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.8rem; max-width: 1100px; margin: 0 auto; }
+    .review-card {
+      background: linear-gradient(135deg, #fdf6ff, #ffe8fb);
+      border-left: 5px solid var(--primary); border-radius: 16px;
+      padding: 1.8rem; box-shadow: 0 4px 12px rgba(0,0,0,.07);
+      transition: transform .2s;
+    }
+    .review-card:hover { transform: translateY(-4px); }
+    .review-stars { font-size: 1.2rem; margin-bottom: .6rem; }
+    .star-filled { color: var(--accent); }
+    .star-empty { color: #ddd; }
+    .review-text { font-size: .95rem; color: #333; line-height: 1.7; font-style: italic; margin-bottom: 1rem; }
+    .review-footer { display: flex; align-items: center; gap: .6rem; }
+    .review-author { font-weight: 800; color: var(--secondary); font-size: .9rem; }
+    .verified-badge {
+      display: inline-block; background: var(--secondary); color: var(--white);
+      font-size: .68rem; border-radius: 50px; padding: .15rem .6rem;
+    }
+
+    /* VISIT US */
+    .visit { background: linear-gradient(135deg, var(--dark), var(--secondary)); color: var(--white); }
+    .visit .section-title { color: var(--accent); }
+    .visit .section-title span { color: #4cc9f0; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto; }
+    .info-item { background: rgba(255,255,255,.12); border-radius: 16px; padding: 1.8rem; text-align: center; border: 1px solid rgba(255,255,255,.2); }
+    .info-item .icon { font-size: 2.2rem; margin-bottom: .8rem; }
+    .info-item h4 { font-size: 1rem; margin-bottom: .4rem; color: var(--accent); }
+    .info-item p { font-size: .93rem; line-height: 1.6; opacity: .9; }
+    .info-item a { color: #4cc9f0; text-decoration: none; font-weight: 700; }
+
+    /* FOOTER */
+    footer { background: #1a1a2e; color: rgba(255,255,255,.7); text-align: center; padding: 2rem; font-size: .88rem; }
+    footer .footer-logo { font-family: 'Pacifico', cursive; color: var(--primary); font-size: 1.4rem; margin-bottom: .5rem; }
+    footer a { color: #4cc9f0; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">🍭 Dulceria Coty</span>
+  <ul class="nav-links">
+    <li><a href="#features">Why Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#visit">Visit Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Dulceria Coty</h1>
+  <p class="tagline">San Diego's Favorite Party & Candy Store 🎉</p>
+  <div class="hero-badges">
+    <span class="badge">🍬 Candy</span>
+    <span class="badge">🎊 Piñatas</span>
+    <span class="badge">🎁 Party Supplies</span>
+    <span class="badge">✅ Open Today</span>
+  </div>
+  <div class="stars-row">
+    <div class="stars">★★★★★</div>
+    <p class="rating-text">4.7 Stars · 55 Google Reviews</p>
+  </div>
+  <a href="https://maps.google.com/?q=2876+Imperial+Ave+San+Diego+CA+92102" target="_blank" class="cta-btn">📍 Get Directions</a>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <h2 class="section-title">Why <span>Everyone</span> Loves Us</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🤩</div>
+      <h3>Huge Selection</h3>
+      <p>Everything you could imagine for piñatas, candy, and party supplies all under one roof.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <h3>Unbeatable Prices</h3>
+      <p>Ridiculously low prices so your fiesta budget goes further without sacrificing the fun.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">😊</div>
+      <h3>Friendly Staff</h3>
+      <p>Warm, accommodating service that makes every visit feel like family.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎊</div>
+      <h3>All Occasions</h3>
+      <p>Birthdays, quinceañeras, holidays — we have supplies for every celebration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2 class="section-title">Our <span>Products</span></h2>
+  <div class="products-grid">
+    <div class="product-card">
+      <span class="product-emoji">🎊</span>
+      <h4>Piñatas</h4>
+      <p>All shapes and sizes at unbeatable prices</p>
+    </div>
+    <div class="product-card">
+      <span class="product-emoji">🍬</span>
+      <h4>Candy & Sweets</h4>
+      <p>Huge variety of Mexican & American candies</p>
+    </div>
+    <div class="product-card">
+      <span class="product-emoji">🎈</span>
+      <h4>Party Decorations</h4>
+      <p>Balloons, streamers, banners & more</p>
+    </div>
+    <div class="product-card">
+      <span class="product-emoji">🎁</span>
+      <h4>Party Favors</h4>
+      <p>Goody bags, toys & treats guests will love</p>
+    </div>
+    <div class="product-card">
+      <span class="product-emoji">🍭</span>
+      <h4>Bulk Candy</h4>
+      <p>Perfect for filling piñatas and bags</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <h2 class="section-title">What <span>Customers</span> Say</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">
+        <span class="star-filled">★★★★★</span>
+      </div>
+      <p class="review-text">"Awesome variety of candy and piñatas. Friendly service, good prices, and accommodating service."</p>
+      <div class="review-footer">
+        <span class="review-author">florhmx</span>
+        <span class="verified-badge">✔ Verified Customer</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <span class="star-filled">★★★★★</span>
+      </div>
+      <p class="review-text">"Had everything you could imagine for piñatas. Found what I wanted quickly, very inexpensive, very nice and loaded with all kinds of candies!"</p>
+      <div class="review-footer">
+        <span class="review-author">Juan Lambaren</span>
+        <span class="verified-badge">✔ Verified Customer</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">
+        <span class="star-filled">★★★★★</span>
+      </div>
+      <p class="review-text">"A humble place for all party favors you need for a good old fashioned fiesta. Piñatas at ridiculously low prices in many shapes and sizes."</p>
+      <div class="review-footer">
+        <span class="review-author">Jasmine Garcia</span>
+        <span class="verified-badge">✔ Verified Customer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT US -->
+<section class="visit" id="visit">
+  <h2 class="section-title">Visit <span>Us Today</span></h2>
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="icon">📍</div>
+      <h4>Address</h4>
+      <p>2876 Imperial Ave<br>San Diego, CA 92102</p>
+    </div>
+    <div class="info-item">
+      <div class="icon">🕗</div>
+      <h4>Hours</h4>
+      <p>Open Daily<br>Closes at <strong>8:00 PM</strong></p>
+    </div>
+    <div class="info-item">
+      <div class="icon">📞</div>
+      <h4>Phone</h4>
+      <p><a href="tel:+16192545659">(619) 254-5659</a></p>
+    </div>
+    <div class="info-item">
+      <div class="icon">⭐</div>
+      <h4>Google Rating</h4>
+      <p><strong>4.7 / 5</strong><br>55 Reviews</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">🍭 Dulceria Coty</div>
+  <p>2876 Imperial Ave, San Diego, CA 92102 · <a href="tel:+16192545659">(619) 254-5659</a></p>
+  <p style="margin-top:.5rem">© 2025 Dulceria Coty · All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
